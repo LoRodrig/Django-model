@@ -25,27 +25,69 @@ body {
     align-items: center;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-}
+
 
 @media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 10%;
+    .col-md-6.col-sm-12 {
+       
+    justify-content: center;
+    align-items: center;
     }
+.main{
+    padding-top: 4rem;
+}
 
-    .register-form{
+.login-form{
+        
+        margin-top: 10%;
+        
+    }
+ .sidenav{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 1;
+        top: 0;
+        left: 0;
+        
+    }
+.logo{
+    max-width: 15rem;
+    size-adjust: auto;
+    left: 0;
+    flex-wrap:nowrap;
+}
+.register-form{
         margin-top: 10%;
     }
+}
+.btn{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 @media screen and (min-width: 768px){
     .main{
         margin-left: 40%; 
+
     }
+    .btn{
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    
+    
 
     .sidenav{
-        width: 40%;
+        width: 50%;
         position: fixed;
         display: flex;
         align-items: center;
@@ -82,7 +124,6 @@ body {
 .btn-black{
     background-color: #000 !important;
     color: #fff;
-    
     
 }
 
